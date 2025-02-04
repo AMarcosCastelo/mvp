@@ -5,6 +5,10 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm"
   },
+  "engines": {
+    "node": "22.13.0"
+  },
+  "packageManager": "pnpm@10.1.0",
   "private": true,
   "dependencies": {
     "next": "15.1.4",
