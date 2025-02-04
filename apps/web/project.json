@@ -1,9 +1,9 @@
 {
-  "name": "mvp",
+  "name": "web",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/mvp",
+  "sourceRoot": "apps/web",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project mvp --web",
+  "// targets": "to see all targets run: nx show project web --web",
   "targets": {}
 }
