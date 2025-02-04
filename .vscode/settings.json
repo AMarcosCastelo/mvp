@@ -1,0 +1,32 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "json"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "conventionalCommits.scopes": ["api", "app", "e2e", "lib", "nx", "web"],
+  "cSpell.words": [],
+  "jestrunner.jestCommand": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.displayLanguage": "en",
+  "i18n-ally.namespace": true,
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.enabledFrameworks": ["react", "i18next"],
+  "i18n-ally.localesPaths": ["libs/shared/web/i18n/src/locales/**/*"],
+  "i18n-ally.keystyle": "nested"
+}
