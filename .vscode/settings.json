@@ -17,6 +17,7 @@
   },
   "conventionalCommits.scopes": ["api", "app", "e2e", "lib", "nx", "web"],
   "cSpell.words": [],
+  "cSpell.ignoreWords": ["commitlint"],
   "jestrunner.jestCommand": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
