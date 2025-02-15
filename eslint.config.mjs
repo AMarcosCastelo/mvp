@@ -9,6 +9,7 @@ export default [
   },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    ignores: ['**/jest.config.ts'],
     rules: {
       '@nx/enforce-module-boundaries': [
         'error',
