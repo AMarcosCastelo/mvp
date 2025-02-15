@@ -2,6 +2,8 @@
 
 import { usePomodoro } from './usePomodoro';
 
+const FIVE_MINUTES_IN_SECONDS = 300;
+
 export const PomodoroTimer = () => {
   // Constants for SVG circle dimensions and calculations
   const CIRCLE_RADIUS = 90; // Radius of the timer circle
@@ -100,19 +102,22 @@ export const PomodoroTimer = () => {
       {/* Control buttons */}
       <div className="flex items-center gap-4">
         <button
-          onClick={() => decreaseTime(300)} // Decrease 5 minutes (300 seconds)
+          onClick={() => decreaseTime(FIVE_MINUTES_IN_SECONDS)} // Decrease 5 minutes (300 seconds)
+          aria-label="Decrease time by 5 minutes"
           className="w-12 h-12 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-gray-300"
         >
           -5
         </button>
         <button
           onClick={isRunning ? pauseTimer : startTimer} // Toggle timer state
+          aria-label={isRunning ? 'Pause timer' : 'Start timer'}
           className="px-6 py-2 bg-gray-200 text-gray-800 rounded-full hover:bg-gray-300 min-w-[140px]"
         >
           {isRunning ? 'Pause' : 'Start'}
         </button>
         <button
-          onClick={() => addTime(300)} // Add 5 minutes (300 seconds)
+          onClick={() => addTime(FIVE_MINUTES_IN_SECONDS)} // Add 5 minutes (300 seconds)
+          aria-label="Increase time by 5 minutes"
           className="w-12 h-12 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-gray-300"
         >
           +5
