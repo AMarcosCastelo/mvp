@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { usePomodoro } from './usePomodoro';
 
 const FIVE_MINUTES_IN_SECONDS = 300;
@@ -79,13 +80,13 @@ export const PomodoroTimer = () => {
           {/* Minute hand */}
           <line
             x1="100"
-            y1="100" // Start at center
+            y1="100"
             x2="100"
-            y2="30" // End point of hand
-            className="stroke-blue-500 stroke-[3px]" // Hand styling
+            y2="30"
+            className="stroke-blue-500 stroke-[3px]"
             style={{
-              transformOrigin: 'center', // Rotate from center
-              transform: `rotate(${minuteHandRotation}deg)`, // Apply rotation
+              transformOrigin: 'center',
+              transform: `rotate(${minuteHandRotation}deg)`,
             }}
           />
           {/* Center dot */}

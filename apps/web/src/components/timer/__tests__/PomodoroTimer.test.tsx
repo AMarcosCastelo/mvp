@@ -1,6 +1,7 @@
+import React, { act } from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
+
 import { PomodoroTimer } from '../PomodoroTimer';
-import { act } from 'react-dom/test-utils';
 
 describe('PomodoroTimer', () => {
   beforeEach(() => {
@@ -84,16 +85,17 @@ describe('PomodoroTimer', () => {
   it('should rotate hand based on time', () => {
     render(<PomodoroTimer />);
 
-    // Get the minute hand element
-    const hand = document.querySelector('line.stroke-blue-500');
-    expect(hand).toHaveStyle({
-      transform: expect.stringContaining('rotate(240deg)'), // 25 minutes position
-    });
+    // Initial rotation check
+    const initialHand = document.querySelector('line.stroke-blue-500');
+    const initialStyle = window.getComputedStyle(initialHand!);
+    expect(initialStyle.transform).toContain('rotate(240deg)');
 
     // Add 5 minutes
     fireEvent.click(screen.getByText('+5'));
-    expect(hand).toHaveStyle({
-      transform: expect.stringContaining('rotate(270deg)'), // 30 minutes position
-    });
+
+    // Get updated style after click
+    const updatedHand = document.querySelector('line.stroke-blue-500');
+    const updatedStyle = window.getComputedStyle(updatedHand!);
+    expect(updatedStyle.transform).toContain('rotate(270deg)');
   });
 });
