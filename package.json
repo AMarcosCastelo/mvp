@@ -8,7 +8,7 @@
     "prepare": "husky"
   },
   "engines": {
-    "node": "22.13.0"
+    "node": "22.14.0"
   },
   "packageManager": "pnpm@10.4.1",
   "private": true,
