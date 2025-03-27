@@ -13,13 +13,13 @@
   "packageManager": "pnpm@10.6.5",
   "private": true,
   "dependencies": {
-    "@tailwindcss/postcss": "4.0.16",
+    "@tailwindcss/postcss": "4.0.17",
     "cspell": "8.17.5",
     "lint-staged": "15.5.0",
     "next": "15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "tailwindcss": "4.0.16"
+    "tailwindcss": "4.0.17"
   },
   "devDependencies": {
     "@commitlint/cli": "19.8.0",
