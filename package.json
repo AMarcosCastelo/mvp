@@ -14,7 +14,7 @@
   "private": true,
   "dependencies": {
     "@tailwindcss/postcss": "4.1.4",
-    "cspell": "8.18.1",
+    "cspell": "8.19.0",
     "lint-staged": "15.5.1",
     "next": "15.3.0",
     "react": "19.1.0",
