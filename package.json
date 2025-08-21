@@ -38,7 +38,7 @@
     "@nx/workspace": "20.8.2",
     "@playwright/test": "1.55.0",
     "@swc-node/register": "1.11.1",
-    "@swc/core": "1.13.3",
+    "@swc/core": "1.13.4",
     "@swc/helpers": "0.5.17",
     "@swc/jest": "0.2.39",
     "@testing-library/jest-dom": "6.8.0",
