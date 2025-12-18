@@ -47,7 +47,7 @@
     "@types/node": "18.19.130",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "autoprefixer": "10.4.22",
+    "autoprefixer": "10.4.23",
     "babel-jest": "29.7.0",
     "eslint": "9.39.2",
     "eslint-config-next": "14.2.35",
