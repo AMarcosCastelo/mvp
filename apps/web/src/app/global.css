@@ -1,5 +1,46 @@
 @import 'tailwindcss';
 
+@theme {
+  /* Pickled Bluewood - Primary */
+  --color-pickled-bluewood-50: '#f4f7fb';
+  --color-pickled-bluewood-100: '#e8eef6';
+  --color-pickled-bluewood-200: '#ccdceb';
+  --color-pickled-bluewood-300: '#a0c1d9';
+  --color-pickled-bluewood-400: '#6c9fc4';
+  --color-pickled-bluewood-500: '#4a83ad';
+  --color-pickled-bluewood-600: '#386991';
+  --color-pickled-bluewood-700: '#2e5476';
+  --color-pickled-bluewood-800: '#27445d';
+  --color-pickled-bluewood-900: '#273e53';
+  --color-pickled-bluewood-950: '#1a2837';
+
+  /* Faded Jade - Secondary */
+  --color-faded-jade-50: '#f4f9f8';
+  --color-faded-jade-100: '#dcebe7';
+  --color-faded-jade-200: '#b8d7cf';
+  --color-faded-jade-300: '#8dbbb1';
+  --color-faded-jade-400: '#659c92';
+  --color-faded-jade-500: '#497d74';
+  --color-faded-jade-600: '#3a6760';
+  --color-faded-jade-700: '#32534f';
+  --color-faded-jade-800: '#2b4440';
+  --color-faded-jade-900: '#273a38';
+  --color-faded-jade-950: '#12211f';
+
+  /* Tradewind - Tertiary */
+  --color-tradewind-50: '#f4f9f8';
+  --color-tradewind-100: '#d9eeeb';
+  --color-tradewind-200: '#b2ddd7';
+  --color-tradewind-300: '#71bbb2';
+  --color-tradewind-400: '#5aa7a0';
+  --color-tradewind-500: '#408c86';
+  --color-tradewind-600: '#326f6c';
+  --color-tradewind-700: '#2b5a58';
+  --color-tradewind-800: '#264948';
+  --color-tradewind-900: '#233e3d';
+  --color-tradewind-950: '#102223';
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,

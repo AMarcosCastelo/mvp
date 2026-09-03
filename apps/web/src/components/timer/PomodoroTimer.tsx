@@ -45,14 +45,6 @@ export const PomodoroTimer = () => {
           className="w-full h-full -rotate-90 transform" // Rotate SVG to start at top
           viewBox="0 0 200 200" // SVG coordinate system
         >
-          {/* Background circle */}
-          <circle
-            cx="100"
-            cy="100" // Center point
-            r={CIRCLE_RADIUS} // Circle radius
-            className="stroke-gray-200 fill-none" // Circle styling
-            strokeWidth="4" // Circle line width
-          />
           {/* Tick marks - 60 lines for minutes */}
           {[...Array(60)].map((_, i) => {
             // Calculate tick mark positions using trigonometry
@@ -60,9 +52,9 @@ export const PomodoroTimer = () => {
             const x1 = 100 + (CIRCLE_RADIUS - 5) * Math.cos(angle);
             const y1 = 100 + (CIRCLE_RADIUS - 5) * Math.sin(angle);
             const x2 =
-              100 + (CIRCLE_RADIUS + (i % 5 === 0 ? 2 : 0)) * Math.cos(angle);
+              100 + (CIRCLE_RADIUS + (i % 5 === 0 ? 6 : 0)) * Math.cos(angle);
             const y2 =
-              100 + (CIRCLE_RADIUS + (i % 5 === 0 ? 2 : 0)) * Math.sin(angle);
+              100 + (CIRCLE_RADIUS + (i % 5 === 0 ? 6 : 0)) * Math.sin(angle);
 
             return (
               <line
@@ -119,7 +111,7 @@ export const PomodoroTimer = () => {
         <button
           onClick={() => addTime(FIVE_MINUTES_IN_SECONDS)} // Add 5 minutes (300 seconds)
           aria-label="Increase time by 5 minutes"
-          className="w-12 h-12 rounded-full bg-gray-200 text-gray-800 flex items-center justify-center hover:bg-gray-300"
+          className="w-12 h-12 rounded-full bg-faded-jade-200 text-faded-jade-800 flex items-center justify-center hover:bg-faded-jade-300"
         >
           +5
         </button>
